@@ -1,4 +1,3 @@
-Of course. Here is the `README.md` file rewritten for the Purdue University mago3d workshop, with all the necessary instructions.
 
 -----
 
