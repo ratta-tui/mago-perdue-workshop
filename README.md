@@ -59,56 +59,62 @@ This section contains the Docker commands to process the raw data for Hamilton C
 Note: Before running these commands, you must replace YOUR_PROJECT_DIR with the absolute path to your project folder on your machine. For example, on Windows, it might look like D:\my-workshops\cesiumjs-workshop.
 
 Hamilton County
+
+YOUR_PROJECT_DIR(ex C:\mago-perdue-workshop\..\)
 1. **Terrain**
 ```Bash
-docker run --rm -v "YOUR_PROJECT_DIR/public/perdue:/workspace" \
-  gaia3d/mago-3d-terrainer \
-  --input /workspace/org/dem/ \
-  --output /workspace/output/terrain/ \
-  --log /workspace/output/terrain/log.txt \
-  -cn --minDepth 0 --maxDepth 17
+# run mago-terrainer for window PowerShell
+docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
+   gaia3d/mago-3d-terrainer `
+   --input /workspace/org/dem/ `
+   --output /workspace/output/terrain/ `
+   --log /workspace/output/terrain/log.txt `
+   -cn --minDepth 0 --maxDepth 17
 ```
-
+![](/public/images/terrain.png)
 2. **Buildings**
 ```Bash
-docker run --rm -v "YOUR_PROJECT_DIR/public/perdue:/workspace" \
-  gaia3d/mago-3d-tiler \
-  --input /workspace/org/buildings/Building_foot_prints_meter_clip.geojson \
-  --output /workspace/output/tileset/buildings/ \
-  --inputType geojson \
-  --crs 4326 \
-  --heightColumn "rel_height_2_meter" \
-  --terrain /workspace/org/dem/hamilton_dem_navd88_meters_4326_clip.tif \
+docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
+  gaia3d/mago-3d-tiler `
+  --input /workspace/org/buildings/Building_foot_prints_meter_clip.geojson `
+  --output /workspace/output/tileset/buildings/ `
+  --inputType geojson `
+  --crs 4326 `
+  --heightColumn "rel_height_2_meter" `
+  --terrain /workspace/org/dem/hamilton_dem_navd88_meters_4326_clip_optimized.tif `
   --log /workspace/output/tileset/buildings/log.txt
 ```
-3. **Point Cloud** 
+![](/public/images/building.png)
+3. **trees(i3dm)**
 ```Bash
-docker run --rm -v "YOUR_PROJECT_DIR/public/perdue:/workspace" \
-  gaia3d/mago-3d-tiler \
-  --input /workspace/org/pointcloud/forest_meter_4326.laz \
-  --output /workspace/output/tileset/pointcloud \
-  --log /workspace/output/tileset/pointcloud/log.txt \
-  --inputType laz \
-  --crs 4326 \
-  --pointRatio 70 \
+docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
+  gaia3d/mago-3d-tiler `
+  --scaleColumn "rel_height_m" `
+  --inputType gpkg `
+  --input /workspace/org/forest/forest_meter_clip.gpkg `
+  --outputType i3dm `
+  --output /workspace/output/tileset/forest `
+  --crs 4326 `
+  --instance /workspace/org/forest/instance-LOD3.glb `
+  --terrain /workspace/org/dem/hamilton_dem_navd88_meters_4326_clip_optimized.tif `
+  --log /workspace/output/tileset/forest/log.txt `
   --tilesVersion 1.0
 ```
+![](/public/images/trees.png)
 
-4. **trees(i3dm)**
+4. **Point Cloud** 
 ```Bash
-docker run --rm -v "YOUR_PROJECT_DIR/public/perdue:/workspace" \
-  gaia3d/mago-3d-tiler \
-  --scaleColumn "rel_height_m" \
-  --inputType gpkg \
-  --input "/workspace/org/forest/forest_meter_clip.gpkg" \
-  --outputType i3dm \
-  --output "/workspace/pre-made-output/tileset/forest" \
-  --crs 4326 \
-  --instance "/workspace/org/forest/instance-LOD3.glb" \
-  --terrain "/workspace/org/dem/hamilton_dem_navd88_meters_4326_clip.tif" \
-  --log "/workspace/pre-made-output/tileset/forest/log.txt" \
+docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
+  gaia3d/mago-3d-tiler `
+  --input /workspace/org/pointcloud/forest_meter_4326.laz `
+  --output /workspace/output/tileset/pointcloud `
+  --log /workspace/output/tileset/pointcloud/log.txt `
+  --inputType laz `
+  --crs 4326 `
+  --pointRatio 70 `
   --tilesVersion 1.0
 ```
+![](/public/images/pnts.png)
 
 ## Developer Scripts
 This project includes a few scripts to help with development. You can run any of them from the terminal.
@@ -117,7 +123,7 @@ npm run eslint: Find and fix common JavaScript code issues using ESLint.
 
 npm run prettier: Format all code to a consistent style using Prettier.
 
-npm run dev: Start a development server at http://localhost:5173/ using Vite.
+npm run dev: Start a development server at http://localhost:5173/ ( or http://localhost:5174/ ) using Vite.
 
 npm run build: Create an optimized build for production, with output in the dist/ directory.
 
