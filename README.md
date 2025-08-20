@@ -72,6 +72,7 @@ docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
    -cn --minDepth 0 --maxDepth 17
 ```
 ![](/public/images/terrain.png)
+
 2. **Buildings**
 ```Bash
 docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
@@ -85,6 +86,7 @@ docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
   --log /workspace/output/tileset/buildings/log.txt
 ```
 ![](/public/images/building.png)
+
 3. **trees(i3dm)**
 ```Bash
 docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
