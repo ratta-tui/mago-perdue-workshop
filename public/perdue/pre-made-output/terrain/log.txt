@@ -1,0 +1,235 @@
+dataFileCache open start
+----------------------------------------
+mago-3d-terrainer(1.10.1-release) by Gaia3d, Inc.
+----------------------------------------
+Input Path: /workspace/org/dem/
+Output Path: /workspace/pre-made-output/terrain/
+Log Path: /workspace/pre-made-output/terrain/log.txt
+Minimum Tile Depth: 0
+Maximum Tile Depth: 17
+Intensity: 4.0
+Interpolation Type: BILINEAR
+Priority Type: RESOLUTION
+Calculate Normals: true
+----------------------------------------
+Tiling Mosaic Size: 16
+Tiling Max Raster Size: 16384
+Layer Json Generate: false
+Debug Mode: false
+----------------------------------------
+[Generate] Start Terrainer process.
+[Pre][Standardization] Start GeoTiff Standardization files.
+[Raster][I/O] loading the geoTiff file: /workspace/org/dem//hamilton_dem_navd88_meters_4326_clip.tif
+[Pre][Standardization][1/1] : /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Pre][Standardization] Finished GeoTiff Standardization files.
+[Pre][Resize] Start GeoTiff Resizing files.
+[Pre][Resize GeoTiff] resizing geoTiffs Count : 1 
+[Pre][Resize GeoTiff][1/1] resizing geoTiff : hamilton_dem_navd88_meters_4326_clip-0-0.tif 
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Pre][Resize] Finished GeoTiff Resizing files.
+[Tile] Start generate terrain elevation data.
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/0/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile] Finished generate terrain elevation data.
+[Tile] Start making tile meshes.
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/0/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][0/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][0/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+[Tile][0/17][1/1] process tiling...
+[Tile][0/17] - End making tile meshes : Duration: 240ms
+[Tile][0/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 333MBMB / UsedMem: 250MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/1/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][1/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][1/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+[Tile][1/17][1/1] process tiling...
+[Tile][1/17] - End making tile meshes : Duration: 280ms
+[Tile][1/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 327MBMB / UsedMem: 256MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/2/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][2/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][2/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+[Tile][2/17][1/1] process tiling...
+[Tile][2/17] - End making tile meshes : Duration: 364ms
+[Tile][2/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 317MBMB / UsedMem: 266MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/3/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][3/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][3/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+[Tile][3/17][1/1] process tiling...
+[Tile][3/17] - End making tile meshes : Duration: 445ms
+[Tile][3/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 308MBMB / UsedMem: 275MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/4/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][4/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][4/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/4/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][4/17][1/1] process tiling...
+[Tile][4/17] - End making tile meshes : Duration: 527ms
+[Tile][4/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 297MBMB / UsedMem: 286MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/5/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][5/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][5/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/5/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][5/17][1/1] process tiling...
+[Tile][5/17] - End making tile meshes : Duration: 578ms
+[Tile][5/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 287MBMB / UsedMem: 296MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/6/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][6/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][6/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/6/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][6/17][1/1] process tiling...
+[Tile][6/17] - End making tile meshes : Duration: 646ms
+[Tile][6/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 279MBMB / UsedMem: 304MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/7/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][7/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][7/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/7/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][7/17][1/1] process tiling...
+[Tile][7/17] - End making tile meshes : Duration: 796ms
+[Tile][7/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 269MBMB / UsedMem: 314MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/8/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][8/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][8/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/8/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][8/17][1/1] process tiling...
+[Tile][8/17] - End making tile meshes : Duration: 699ms
+[Tile][8/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 254MBMB / UsedMem: 329MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/9/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][9/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][9/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/9/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][9/17][1/1] process tiling...
+[Tile][9/17] - End making tile meshes : Duration: 487ms
+[Tile][9/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 241MBMB / UsedMem: 342MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/10/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][10/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][10/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/10/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][10/17][1/1] process tiling...
+[Tile][10/17] - End making tile meshes : Duration: 676ms
+[Tile][10/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 226MBMB / UsedMem: 357MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/11/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][11/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][11/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/11/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][11/17][1/1] process tiling...
+[Tile][11/17] - End making tile meshes : Duration: 1s 5ms
+[Tile][11/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 211MBMB / UsedMem: 372MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/12/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][12/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][12/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/12/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][12/17][1/1] process tiling...
+[Tile][12/17] - End making tile meshes : Duration: 760ms
+[Tile][12/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 197MBMB / UsedMem: 386MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/13/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][13/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][13/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/13/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][13/17][1/1] process tiling...
+[Tile][13/17] - End making tile meshes : Duration: 1s 48ms
+[Tile][13/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 333MBMB / UsedMem: 250MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/14/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][14/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][14/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/14/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][14/17][1/1] process tiling...
+Info: childMeshes.size() != 4 : tile indices : X : 8551, Y : 11834, L : 14
+[Tile][14/17] - End making tile meshes : Duration: 1s 551ms
+[Tile][14/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 276MBMB / UsedMem: 307MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/15/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][15/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][15/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/15/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][15/17][1/1] process tiling...
+Info: childMeshes.size() != 4 : tile indices : X : 17104, Y : 23669, L : 15
+[Tile][15/17] - End making tile meshes : Duration: 3s 670ms
+[Tile][15/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 584MBMB / FreeMem: 265MBMB / UsedMem: 318MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain//resized/16/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][16/17] Start generating tile meshes - Divided Tiles Size: 1
+[Tile][16/17][1/1] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain//resized/16/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][16/17][1/1] process tiling...
+Info: childMeshes.size() != 4 : tile indices : X : 34209, Y : 47340, L : 16
+[Tile][16/17] - End making tile meshes : Duration: 10s 155ms
+[Tile][16/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 662MBMB / FreeMem: 158MBMB / UsedMem: 503MBMB ({}%)
+----------------------------------------
+[Raster][I/O] loading the geoTiff file: /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][17/17] Start generating tile meshes - Divided Tiles Size: 4
+[Tile][17/17][1/4] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 0 / 0
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+ReUsing the GeoTiff coverage : /workspace/pre-made-output/terrain/standardization/hamilton_dem_navd88_meters_4326_clip-0-0.tif
+[Tile][17/17][1/4] process tiling...
+[Tile][17/17][2/4] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 34 / 221
+[Tile][17/17][2/4] process tiling...
+[Tile][17/17][3/4] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 4 / 238
+[Tile][17/17][3/4] process tiling...
+[Tile][17/17][4/4] generate wgs84 raster all tiles...
+ReusedRasterTilesCount = 34 / 221
+[Tile][17/17][4/4] process tiling...
+[Tile][17/17] - End making tile meshes : Duration: 17s 220ms
+[Tile][17/17] Java Heap Size: OpenJDK 64-Bit Server VM 2492MB - MaxMem: 2GBMB / TotalMem: 1GBMB / FreeMem: 312MBMB / UsedMem: 777MBMB ({}%)
+----------------------------------------
+[Tile] Finished making tile meshes.
+[Post][Clear] Start deleting memory objects.
+[Post][Clear] Finished deleting memory objects.
+[Report][I/O] writing the report file: /workspace/pre-made-output/terrain/report.txt
+[Generate] Finished Terrainer process.
+[Post] Deleting tileTempFolder
+[Post] Deleting resizedTempFolder
+----------------------------------------
+[Report Summary]
+Info : 0
+Warning : 0
+Error : 0
+Fatal : 0
+Total Report Count : 0
+[Process Summary]
+End Process Time : 51s 483ms
+----------------------------------------

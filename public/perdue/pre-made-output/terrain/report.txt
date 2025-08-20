@@ -1,0 +1,18 @@
+===============================================
+[Report Information]
+Name : mago-3d-terrainer
+Version : Unknown
+Java Version : 17.0.15
+Start Time : 2025-08-19 07:37:07 77
+End Time : 2025-08-19 07:37:59 25
+Duration : 51s 483ms
+-----------------------------------------------
+[Report Summary]
+Info Count : 0
+Warning Count : 0
+Error Count : 0
+Fatal Count : 0
+Total Report Count : 0
+-----------------------------------------------
+[No Detail Report]
+===============================================
