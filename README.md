@@ -60,7 +60,8 @@ Note: Before running these commands, you must replace YOUR_PROJECT_DIR with the 
 
 Hamilton County
 
-YOUR_PROJECT_DIR(ex C:\mago-perdue-workshop\..\)
+YOUR_PROJECT_DIR(ex C:\mago-perdue-workshop\..\) 
+##### Be sure to set the path to the directory where the source code received from git is located.
 1. **Terrain**
 ```Bash
 # run mago-terrainer for window PowerShell
@@ -87,7 +88,7 @@ docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
 ```
 ![](/public/images/building.png)
 
-3. **trees(i3dm)**
+3. **Forest(i3dm)**
 ```Bash
 docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
   gaia3d/mago-3d-tiler `
@@ -116,6 +117,8 @@ docker run --rm -v "YOUR_PROJECT_DIR\public\perdue:/workspace" `
   --pointRatio 70 `
   --tilesVersion 1.0
 ```
+
+### If the command takes a long time, try lowering the pointRatio and trying again. Pointclouds require a lot of memory.
 ![](/public/images/pnts.png)
 
 ## Developer Scripts

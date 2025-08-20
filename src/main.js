@@ -55,7 +55,8 @@ try {
 
   // Uncomment the line below to load the terrain data.
 
-  /*purdueTerrainProvider = await Cesium.CesiumTerrainProvider.fromUrl(
+  /*  << delete this line
+  purdueTerrainProvider = await Cesium.CesiumTerrainProvider.fromUrl(
       "/perdue/output/terrain/"
   );
   viewer.terrainProvider = purdueTerrainProvider;
@@ -73,7 +74,9 @@ try {
       viewer.terrainProvider = purdueTerrainProvider;
     }
   };
-  toolbar.appendChild(terrainButton)*/
+  toolbar.appendChild(terrainButton)
+
+  * << delete this line  */
 
   // --- Code to visualize the terrain boundary (for reference) ---
   const originalBounds = [ -86.03777909739436,40.0306734475314, -86.00282579151833,40.05506456114478];
@@ -110,7 +113,7 @@ try {
 // Step 2: Load and Style the Buildings 3D Tileset
 try {
   // Uncomment the code block below to load the building 3D tiles and apply a style.
-  /*
+  /* << delete this line
   const tileset = await Cesium.Cesium3DTileset.fromUrl("/perdue/output/tileset/buildings/tileset.json");
   tileset.style = new Cesium.Cesium3DTileStyle({
     color: {
@@ -141,7 +144,7 @@ try {
     duration: 3,
     offset : new Cesium.HeadingPitchRange( 0,  Cesium.Math.toRadians(-60), tileset.boundingSphere.radius * 1.5 )
   });
-  */
+  << delete this line */
 } catch (error) {
   console.log(`Error creating building tileset: ${error}`);
 }
@@ -150,7 +153,7 @@ try {
 // Step 3: Load the Forest 3D Tileset
 try {
   // Uncomment the code block below to load the forest 3D tiles.
-  /*
+  /*<< delete this line
   const forestTileset = await Cesium.Cesium3DTileset.fromUrl("/perdue/output/tileset/forest/tileset.json");
   viewer.scene.primitives.add(forestTileset);
 
@@ -160,7 +163,7 @@ try {
     forestTileset.show = !forestTileset.show;
   };
   toolbar.appendChild(forestButton);
-  */
+  << delete this line */
 } catch (error) {
   console.log(`Error creating forest tileset: ${error}`);
 }
@@ -169,7 +172,7 @@ try {
 // Step 4: Load and Style the Point Cloud
 try {
   // Uncomment the code block below to load the point cloud and apply a style.
-  /*
+  /* << delete this line
   const pointTileset = await Cesium.Cesium3DTileset.fromUrl(
        '/perdue/output/tileset/pointcloud/tileset.json',
        {
@@ -209,7 +212,7 @@ try {
   };
   toolbar.appendChild(pcButton);
 
-  */
+   << delete this line */
 } catch (e) {
   console.log(`Error loading point cloud: ${e}`);
 }
